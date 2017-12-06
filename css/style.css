@@ -14,7 +14,7 @@ body{
 
 .btn-defualt {    border: none;
     background-color: #ec6a6a;
-     padding: 10px 20px;   
+    padding: 10px 20px;   
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;  
@@ -227,7 +227,7 @@ h3{
 }
 
 .banner2{
-	background: url(../images/camerabg.jpg) top center no-repeat;
+	background: url(../images/knowledge_4.png) top center no-repeat;
 	height: 550px;
 	width: 100%;
 	background-size:cover; 
@@ -244,6 +244,10 @@ h3{
   border: 2px solid #ec6a6a;
   
 }
+.banner-box .registerForm{
+    width: 100%;
+    float: left;
+}
 .banner-box input[type=radio] + label {
   
   width: 100%;
@@ -253,6 +257,11 @@ h3{
   position: relative;
   cursor: pointer;
   margin-bottom: 15px;
+}
+.banner .imgsec{
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 .banner-box input[type=radio] + label>img{
 	position: absolute;
@@ -294,6 +303,7 @@ h3{
 	width: 100%;
     float: left;
     text-align: center;
+    padding-top: 30px;
 }
 .banner-box .btnsec button{
 	border: none;
@@ -561,6 +571,10 @@ h3{
     font-weight: 400;
     color:#2a2a2a;
 }
+.banner-box.custem .colm{
+    width: 100%;
+    float: left;
+}
 
 
 /*fire alrmsystem */
@@ -596,6 +610,12 @@ h3{
     position: relative;
     height: 550px;
 }
+.banner .outer_wrapper .divcut{
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+   right: -50px;
+}
 .banner .outer_wrapper .box_{
 	width: 466px;
     background-color: #ec6a6a;
@@ -605,8 +625,9 @@ h3{
     bottom: 0;
     left: 110px;
 	top: auto;
+    bottom: -50px;
 }
-.banner .outer_wrapper .box_:after{
+/*.banner .outer_wrapper .box_:after{
 	content: '';
     position: absolute;
     width: 80%;
@@ -616,7 +637,7 @@ h3{
     bottom: -40px;
     z-index: 999;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
-}
+}*/
 
 
 
@@ -627,7 +648,7 @@ h3{
     background-color: #fff;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 95px 0;
+   
  }
 
 .about_img {
@@ -820,6 +841,7 @@ h3{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
 }
 
 .dropdown-content a {
@@ -850,14 +872,8 @@ h3{
 
 
 .banner-box .btncon button {
-    border: none;
-    background-color: #ec6a6a;
-    margin: 20px 0 0 0;
     width: 216px;
-    font-size: 14px;
-    text-transform: lowercase;
-    color: #fff;
-    float: none;
+   
     height: 50px;
 	}
 
@@ -896,8 +912,13 @@ h3{
 
 .formFinalFormHeader {
     text-align: center;
+    width: 100%;
+    float: left;
 	}
-
+.table-responsive{
+    width: 100%;
+    float: left;
+}
 
 table {
     background-color: transparent;
@@ -981,7 +1002,6 @@ span.competentheding{
 
 .btn {
     display: inline-block;
-    padding: 6px 12px;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;
@@ -1284,6 +1304,10 @@ width: 76px;
 	text-align:center;
 	line-height: 20px;
 }
+.btn-primary:focus, .btn-primary:hover{
+    background-color: #ec6a6a;
+    border: none;
+}
 
 
 
@@ -1319,6 +1343,9 @@ width: 76px;
 	}
     .about_img img{
         width: 100%;
+    }
+    .banner-box .right.carousel-control{
+        position: unset;
     }
 
 
@@ -1408,7 +1435,19 @@ navbar navbar-default .fire-hdr{
 }
  .footergap .col-sm-6{ height: 240px;}
 
+.header-color .collapse.navbar-collapse ul li .dropdown-content a {
+    color: #fff;
+}
+.header-color .collapse.navbar-collapse ul li .dropdown-content a:hover{
+    color:#161616;
+}
 
+.st-header.sticky .collapse.navbar-collapse ul li .dropdown-content a {
+    color: #ec6a6a;
+}
+.st-header.sticky .collapse.navbar-collapse ul li .dropdown-content a:hover{
+    color: #161616;
+}
 
 
 
@@ -1429,6 +1468,7 @@ navbar navbar-default .fire-hdr{
 	.vedio-section .vedio-sec { width:100%;}
 	.vedio-section .vedio-sec .text-sec { padding:20px;}
 	.alrm-srvc ul li .rightsec {padding-left:0}
+    .banner .outer_wrapper .divcut{ }
    
 
 }
@@ -1445,7 +1485,7 @@ navbar navbar-default .fire-hdr{
 	
 	.vedio-section .vedio-sec .text-sec{padding: 0 0 0 10px;}
     .alarm-section .alarm-sec .text-sec{padding: 0px 10px 0 0px;}
-    .banner-box.custem{ width: 85% !important; }
+    .banner-box.custem{ width: 85% !important; height:min-content !important; }
   
 	
 	
@@ -1495,15 +1535,20 @@ navbar navbar-default .fire-hdr{
     .alrm-srvc ul li .rightsec .image-sec { width: 110px; }
 	.alrm-srvc ul li .rightsec .image-sec img{ width: 75px; float: right;filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.1)); }
     .alarm-contant .col-md-6{ display: block; }
-    .boxsize img{ width: 30px; margin: auto;}
+    .boxsize img{ width: 50px; margin: auto;}
     .boxsize .boxsize_inner{ margin-top: 9px; }
     .boxsize .slider.slider-horizontal{ width: 100%;  }  
     .boxsize .med input[type=text], select{ width: 50%; padding: 4px 5px;  }  
     .boxsize .right_value{ right: 14px !important;top:64px !important;  }
     .boxsize .left_value{ left: 15px !important; top: 64px !important; }
     .boxsize .col-md-2{ display: block; }
-    .banner .outer_wrapper .box_{ width: 90%;bottom: 0px;left: 0;top: auto; right: 0;  }
+    .banner .outer_wrapper .box_{ width: 90%;bottom: -50px;left: 0;top: auto; right: 0;  }
     .banner .outer_wrapper .box_:after{ bottom: -38px; }
+     .banner .outer_wrapper .divcut{ display: none; } 
+     .bgcolor{ margin-top: 0; }
+     .banner.custem{ height: auto; }
+     .banner-box.custem{ position: static; }
+     .banner-box.custem .worksec .imgsec img{ width: 90%;}
 
 }
 
